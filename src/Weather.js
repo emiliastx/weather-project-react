@@ -67,13 +67,13 @@ export default function Weather() {
         </a>{" "}
         and is{" "}
         <a
-          href="https://github.com/emiliastx/react-weather-project"
+          href="https://github.com/emiliastx/weather-project-react"
           target="_blank"
         >
           open-sourced on Github
         </a>{" "}
         and{" "}
-        <a href="https://react-weather-emilia.netlify.app/" target="_blank">
+        <a href="https://emilia-weather-react.netlify.app/" target="_blank">
           hosted on Netlify.
         </a>
       </footer>
