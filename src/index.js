@@ -6,4 +6,4 @@ import Weather from "./Weather.js";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<Weather />, rootElement);
+root.render(<Weather defaultCity="London" />, rootElement);
