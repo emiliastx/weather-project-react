@@ -12,12 +12,7 @@ export default function WeatherInfo(props) {
           </div>
           <img className="sunIcon" />
           <div className="current-temp">
-            <img
-              className="current-icon"
-              id="icon"
-              src={props.data.imgURL}
-              alt="sunny"
-            />
+            <img className="current-icon" id="icon" src={props.data.imgURL} />
             <span id="current-temp"> {props.data.temperature}</span>
             <span className="celsius">°C</span>
           </div>

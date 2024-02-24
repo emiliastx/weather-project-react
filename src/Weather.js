@@ -9,15 +9,14 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({});
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       city: response.data.name,
       temperature: Math.round(response.data.main.temp),
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      imgURL:
-        "https://openclipart.org/image/2400px/svg_to_png/208526/sunicon.png",
+      imgURL: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
     });
@@ -88,6 +87,7 @@ export default function Weather(props) {
     );
   } else {
     search();
+    //add a loading spinner here from npm//
     return "Loading...";
   }
 }
