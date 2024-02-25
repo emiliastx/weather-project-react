@@ -22,13 +22,33 @@ export default function WeatherIcon(props) {
     "50d": "FOG",
     "50n": "FOG",
   };
-
-  return (
-    <ReactAnimatedWeather
-      icon={codeMapping[props.code]}
-      color="white"
-      size={70}
-      animate={true}
-    />
-  );
+  if (props.code === "01d") {
+    return (
+      <ReactAnimatedWeather
+        icon={codeMapping[props.code]}
+        color="gold"
+        size={70}
+        animate={true}
+      />
+    );
+  }
+  if (props.code === "01n") {
+    return (
+      <ReactAnimatedWeather
+        icon={codeMapping[props.code]}
+        color="silver"
+        size={70}
+        animate={true}
+      />
+    );
+  } else {
+    return (
+      <ReactAnimatedWeather
+        icon={codeMapping[props.code]}
+        color="white"
+        size={70}
+        animate={true}
+      />
+    );
+  }
 }
