@@ -57,9 +57,7 @@ h1 {
 }
 Weather canvas {
   vertical-align: middle;
-}
-.current-icon {
-  max-width: 70px;
+  margin: 0 auto;
 }
 
 .current-temp {
@@ -67,10 +65,20 @@ Weather canvas {
   color: rgb(8, 54, 114);
   font-weight: 600;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.celsius {
-  font-weight: 300;
+.current-temp-numeral {
+  margin-left: 15px;
 }
+.unit {
+  font-size: 20px;
+}
+.change-unit {
+  color: rgb(35, 96, 177);
+}
+
 .current-weather-type,
 .current-humidity,
 .current-wind {
