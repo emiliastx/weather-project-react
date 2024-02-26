@@ -91,6 +91,9 @@ Weather canvas {
 .weather-app-data strong {
   color: rgb(23, 87, 170);
 }
+
+/*forecast*/
+
 .weather-forecast {
   display: flex;
   border-top: 1px solid rgb(55, 122, 209);
