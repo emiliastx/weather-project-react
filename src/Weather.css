@@ -93,6 +93,10 @@ Weather canvas {
 }
 
 /*forecast*/
+.forecast-col canvas {
+  display: flex;
+  margin: 0 auto;
+}
 
 .weather-forecast {
   display: flex;
