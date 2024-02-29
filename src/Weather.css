@@ -96,6 +96,8 @@ Weather canvas {
 .forecast-col canvas {
   display: flex;
   margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .weather-forecast {
@@ -110,7 +112,6 @@ Weather canvas {
   display: flex;
   flex-direction: column;
 }
-
 .weather-forecast-date {
   font-size: 18px;
   color: rgb(8, 54, 114);
