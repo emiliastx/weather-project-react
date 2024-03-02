@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo.js";
 import WeatherForecast from "./WeatherForecast.js";
+import MoonLoader from "react-spinners/MoonLoader";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -91,6 +92,14 @@ export default function Weather(props) {
   } else {
     search();
     //add a loading spinner here from npm//
-    return "Loading...";
+    return (
+      <MoonLoader
+        color="#0000ff"
+        loading={true}
+        size={150}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+    );
   }
 }
