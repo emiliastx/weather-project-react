@@ -72,18 +72,27 @@ export default function Weather(props) {
 
         <footer>
           This project was coded by{" "}
-          <a href="https://github.com/emiliastx" target="_blank">
+          <a
+            href="https://github.com/emiliastx"
+            target="_blank"
+            rel="noreferrer"
+          >
             Emilia de St Croix
           </a>{" "}
           and is{" "}
           <a
             href="https://github.com/emiliastx/weather-project-react"
             target="_blank"
+            rel="noreferrer"
           >
             open-sourced on Github
           </a>{" "}
           and{" "}
-          <a href="https://emilia-weather-react.netlify.app/" target="_blank">
+          <a
+            href="https://emilia-weather-react.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             hosted on Netlify.
           </a>
         </footer>
@@ -94,6 +103,7 @@ export default function Weather(props) {
     //add a loading spinner here from npm//
     return (
       <MoonLoader
+        className="moon-loader"
         color="#0000ff"
         loading={true}
         size={150}

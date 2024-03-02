@@ -144,3 +144,8 @@ footer {
 a {
   color: rgb(8, 54, 114);
 }
+
+/*loading spinner*/
+.moon-loader {
+  margin: 0 auto;
+}
